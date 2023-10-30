@@ -6,7 +6,11 @@ def encoder(value):
         new_value += str(int(i) + 3)
     return new_value
 def decoder(encoded):
-    pass
+    str_number = str(encoded)
+    new_number = ""
+    for i in str_number:
+        new_number += str(int(i) - 3)
+    return new_number
 
 def menu():
     print("Menu")
